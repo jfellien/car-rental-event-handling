@@ -1,7 +1,7 @@
 module.exports = (context, event) => {
 
   const eventType = event.eventName;
-  const now = new Date.toISOString();
+  const now = new Date().toISOString();
   delete event.eventName;
 
   context.bindings.eventBags = {
