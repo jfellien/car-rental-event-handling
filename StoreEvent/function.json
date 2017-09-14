@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "name": "event",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "notifications",
+      "connection": "car-rental_Send_and_Listen_SERVICEBUS",
+      "accessRights": "Listen"
+    },
+    {
+      "type": "documentDB",
+      "name": "eventBags",
+      "databaseName": "EventStore",
+      "collectionName": "event-bags",
+      "connection": "car-rental_DOCUMENTDB",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
