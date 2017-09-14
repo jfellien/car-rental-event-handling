@@ -8,7 +8,6 @@ module.exports = (context, event) => {
     type : eventType,
     eventData : event
   };
-  // Slack notify
-  
+    
   context.done();
 }
