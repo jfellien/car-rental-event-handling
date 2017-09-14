@@ -6,7 +6,8 @@
       "direction": "in",
       "topicName": "notifications",
       "connection": "car-rental_Send_and_Listen_SERVICEBUS",
-      "accessRights": "Listen"
+      "accessRights": "Listen",
+      "subscriptionName": "eventstore"
     },
     {
       "type": "documentDB",
