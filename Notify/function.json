@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {
+      "name": "event",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "notifications",
+      "connection": "car-rental_Send_and_Listen_SERVICEBUS",
+      "accessRights": "Listen",
+      "subscriptionName": "slack"
+    }
+  ],
+  "disabled": false
+}
