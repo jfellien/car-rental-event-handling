@@ -1,9 +1,11 @@
 module.exports = (context, event, sourceCar) => {
-  const rentedCar = sourceCar;
 
-  rentedCar.staus = "rented";
+  context.log.info(`EVENT: ${ JSON.stringify(event) }`);
+  context.log.info(`SOURCE CAR: ${ JSON.stringify(sourceCar) }`)
+  
+  sourceCar.staus = "rented";
 
-  context.bindings.sinkCar = rentedCar;
+  context.bindings.sinkCar = sourceCar;
 
   context.done();
 }

@@ -14,7 +14,7 @@
       "name": "sourceCar",
       "databaseName": "CarRentals",
       "collectionName": "cars",
-      "documentId": "{carId}",
+      "id": "{carId}",
       "connection": "car-rental_DOCUMENTDB",
       "direction": "in"
     },
@@ -22,7 +22,7 @@
       "type": "documentDB",
       "name": "sinkCar",
       "databaseName": "CarRentals",
-      "collectionName": "car",
+      "collectionName": "cars",
       "connection": "car-rental_DOCUMENTDB",
       "direction": "out"
     }
