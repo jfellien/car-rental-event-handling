@@ -1,0 +1,31 @@
+{
+  "bindings": [
+    {
+      "name": "carRented",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "car-rented",
+      "connection": "car-rental_Send_and_Listen_SERVICEBUS",
+      "accessRights": "Listen",
+      "subscriptionName": "read-model"
+    },
+    {
+      "type": "documentDB",
+      "name": "sourceCar",
+      "databaseName": "CarRentals",
+      "collectionName": "cars",
+      "documentId": "{carId}",
+      "connection": "car-rental_DOCUMENTDB",
+      "direction": "in"
+    },
+    {
+      "type": "documentDB",
+      "name": "sinkCar",
+      "databaseName": "CarRentals",
+      "collectionName": "car",
+      "connection": "car-rental_DOCUMENTDB",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
